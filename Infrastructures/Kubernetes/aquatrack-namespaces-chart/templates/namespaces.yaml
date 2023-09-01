@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: jenkins{{ .Values.namespaces.suffix }}
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: argocd{{ .Values.namespaces.suffix }}
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: observation{{ .Values.namespaces.suffix }}
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: database{{ .Values.namespaces.suffix }}
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dev{{ .Values.namespaces.suffix }}
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: staging{{ .Values.namespaces.suffix }}
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: prod{{ .Values.namespaces.suffix }}

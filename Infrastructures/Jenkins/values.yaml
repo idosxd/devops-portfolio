@@ -1,0 +1,24 @@
+controller:
+  serviceType: LoadBalancer
+  jenkinsUrl: http://127.0.0.1:8080/
+  additionalPlugins:
+    - workflow-multibranch:756.v891d88f2cd46
+    - prometheus:2.2.3
+    - simple-theme-plugin:160.vb_76454b_67900
+    - ansicolor:1.0.3
+    - pipeline-utility-steps:2.16.0
+    - build-user-vars-plugin:1.9
+    - slack:684.v833089650554
+  JCasC:
+    securityRealm: |-
+      local:
+        users:
+        - id: "idosxd"
+          name: "Ido Zarfati"
+          password: "${chart-admin-password}"
+        - id: "yoram"
+          name: "Yoram Michaeli"
+          password: "${chart-admin-password}"
+        - id: "baruchi"
+          name: "Baruchi Halamish"
+          password: "${chart-admin-password}"

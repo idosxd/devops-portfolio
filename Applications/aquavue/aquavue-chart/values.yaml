@@ -1,0 +1,14 @@
+image:
+  repository: idosxd/aquavue
+  tag: ""
+service:
+  type: LoadBalancer
+  port: 5000
+  nodePort: null
+postgresql:
+  enabled: false
+  host: localhost
+  port: "5432"
+  database: postgres
+  username: postgres
+  password: secretpassword

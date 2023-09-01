@@ -1,0 +1,11 @@
+body{
+    background-image: url('https://i.pinimg.com/originals/d1/b4/16/d1b416e60c46e7f6269f425c2bb8f683.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+table, th, td {
+    border: 1px solid rgb(0, 136, 255);
+    -webkit-text-fill-color: rgb(17, 58, 139);
+  }

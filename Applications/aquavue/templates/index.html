@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AquaVue</title>
+    <link rel="stylesheet" href="static/styles/style.css">
+</head>
+<body>
+    <table border="5">
+        <tr><th><img src="https://m.media-amazon.com/images/I/81CyZAiaT8L.jpg" height="160" widht="200"/></th><th>All brands</th><td>{% for brand in all_brands %}
+            <img src="{{ brand.imglink }}" height="160" widht="200"/>
+            {% endfor %}</td></tr>
+        <tr><th><img src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX13949823.jpg" height="160" widht="200"/></th><th>Elite brands</th><td>{% for brand in elite_brands %}
+            <img src="{{ brand.imglink }}" height="160" widht="200"/>
+            {% endfor %}</td></tr>
+        <tr><th><img src="https://img.freepik.com/premium-vector/water-drop-icon-liquid-drop-icon-water-drop-outline-icon-linear-style-sign-mobile-concept-web-design-drop-water-simple-line-vector-icon-symbol-logo-illustration_775815-167.jpg?w=2000" height="160" widht="200"/></th><th>Regular brands</th><td>{% for brand in non_elite_brands %}
+            <img src="{{ brand.imglink }}" height="160" widht="200"/>
+            {% endfor %}</td></tr>
+    </table>
+</body>
+</html>
